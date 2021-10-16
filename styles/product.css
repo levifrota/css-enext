@@ -5,7 +5,10 @@ html {
   margin: 0;
 }
 .main {
-  margin-left: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .slider {
@@ -82,17 +85,17 @@ html {
 }
 
 .product-info-wrapper {
-  display: flex;
-  flex-direction: column;
   padding-top: 2rem;
   height: 80vh;
   display: flex;
+  flex-direction: column;
+
   align-items: flex-start;
   flex-direction: row;
 }
 
 #image1 {
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 #image2,
@@ -122,6 +125,7 @@ html {
 }
 .product-content {
   height: 70vh;
+  width: auto;
   background: #ffff;
   border-radius: 10px;
   display: flex;
@@ -129,7 +133,6 @@ html {
   align-self: flex-start;
   flex-direction: column;
   padding: 0px 30px;
-  margin: 0px 0px 20px 50px;
 }
 
 .product-title {
@@ -151,19 +154,19 @@ html {
   background: #ffff;
   padding: 1%;
   display: flex;
-  align-self: flex-end;
   align-items: center;
   justify-content: center;
-  height: 70vh;
-  width: 40vw;
+  flex-direction: column;
+  height: 60vh;
+  width: 50vw;
   border-radius: 10px;
 }
 
 @media (max-width: 1000px) {
-  .main {
-    margin-left: 0.5rem;
+  #image1 {
+    height: auto;
+    width: 90%;
   }
-  #image1,
   #image6,
   #image7 {
     height: auto;
@@ -180,16 +183,16 @@ html {
   .product-info-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 30%;
   }
 
   .product-content {
     margin: 0.5rem;
-    width: 70vw;
+    width: auto;
     height: auto;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     order: 1;
     flex-direction: column;
@@ -197,20 +200,22 @@ html {
   }
 
   .slider {
-    width: 100%;
+    width: auto;
   }
   .product-images {
-    width: 55%;
-    margin-left: 25%;
+    width: 90%;
+    margin-left: 15%;
   }
   .product-images > div {
-    width: 50vw;
-    height: 50vh;
+    width: 90%;
+    height: 60vh;
     margin-right: 10%;
   }
   .product-specifications-wrapper {
     width: auto;
     height: auto;
     margin: 5%;
+    flex-direction: column;
+    justify-content: center;
   }
 }
