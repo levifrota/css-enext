@@ -43,7 +43,7 @@ html {
   scroll-snap-align: start;
   flex-shrink: 0;
   width: 30vw;
-  height: 70vh;
+  height: 30rem;
   margin-right: 50px;
   border-radius: 10px;
   background: #ffff;
@@ -86,7 +86,7 @@ html {
 
 .product-info-wrapper {
   padding-top: 2rem;
-  height: 80vh;
+  height: auto;
   display: flex;
   flex-direction: column;
 
@@ -94,10 +94,6 @@ html {
   flex-direction: row;
 }
 
-#image1 {
-  height: auto;
-  width: 100%;
-}
 #image2,
 #image3 {
   height: 100%;
@@ -124,12 +120,13 @@ html {
   width: 20px;
 }
 .product-content {
-  height: 70vh;
+  height: auto;
   width: auto;
+  margin-left: 1rem;
   background: #ffff;
   border-radius: 10px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-self: flex-start;
   flex-direction: column;
   padding: 0px 30px;
@@ -157,16 +154,12 @@ html {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 60vh;
+  height: auto;
   width: 50vw;
   border-radius: 10px;
 }
 
 @media (max-width: 1000px) {
-  #image1 {
-    height: auto;
-    width: 90%;
-  }
   #image6,
   #image7 {
     height: auto;
@@ -185,17 +178,16 @@ html {
     flex-direction: column;
     justify-content: center;
     height: 30%;
+    width: 100%;
   }
 
   .product-content {
-    margin: 0.5rem;
     width: auto;
     height: auto;
-    display: flex;
     align-items: flex-start;
+    flex-direction: column;
     justify-content: center;
     order: 1;
-    flex-direction: column;
     align-self: center;
   }
 
@@ -203,8 +195,9 @@ html {
     width: auto;
   }
   .product-images {
-    width: 90%;
-    margin-left: 15%;
+    width: auto;
+    height: 100%;
+    margin-left: 10%;
   }
   .product-images > div {
     width: 90%;
